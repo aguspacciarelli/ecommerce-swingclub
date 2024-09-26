@@ -13,7 +13,7 @@ console.log(cart)
   return (
     <div>
       <HomeHero />
-      {/* <ProductsGrid /> */}
+      { <ProductsGrid />}
     </div>
   );
 }

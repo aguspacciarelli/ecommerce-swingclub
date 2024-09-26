@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Head from 'next/head';
 
 import { AppContextProvider } from '@/app/contexts/AppContext';
 import Navbar from '@/app/components/Navbar/Navbar';
@@ -14,6 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <Head>
+      <link rel="stylesheet" href="https://use.typekit.net/vxz2phk.css"/>
+      </Head>
       <body className={inter.className}>
         <AppContextProvider>
           <Navbar />
